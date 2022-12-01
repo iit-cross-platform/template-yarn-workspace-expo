@@ -47,16 +47,15 @@ This example installs a monorepo with an application using a separate custom pac
 ```
 ├── apps
 │   └── mobile
-│       ├── index.js ➡️ Entry point for the app
+│       ├── index.ts ➡️ Entry point for the app
 │       ├── App.tsx ➡️ App root component
 │       ├── package.json ➡️ contains configuration required by expo-yarn-workspaces
 │       └── metro.config.js ➡️ required by expo-yarn-workspaces
 ├── packages
 │   └── storybook
-│       └── components/index.tsx ➡️ exports a custom message which is imported and displayed in the app
-│       └── src/tsconfig.json ➡️ default TypeScript configuration for expo-module-scripts
-├── package.json ➡️ contains yarn commands to run applications
-└── babel.config.js ➡️ Babel config (should be using `babel-preset-expo`)
+│       └── components/index.ts ➡️ exports a custom message which is imported and displayed in the app
+│       └── tsconfig.json ➡️ default TypeScript configuration for expo-module-scripts
+└── package.json ➡️ contains yarn commands to run applications
 ```
 
 ## 📝 Notes
