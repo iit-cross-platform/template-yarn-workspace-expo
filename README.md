@@ -20,10 +20,27 @@ This example installs a monorepo with an application using a separate custom pac
 
 ## 🚀 How to use
 
-- Create a new monorepo with `npx create-react-native-app --template with-yarn-workspaces`.
+- Create a new monorepo with `npx create-react-native-app --template https://github.com/iit-cross-platform/template-yarn-workspace-expo`.
+- Treminal 1
+- Run `cd project-name`
+- Run `yarn install --check-files`
+- Run `yarn run build-packages` to build the packages.
 - Run `yarn watch-packages` to build and watch the packages.
-- Run `yarn start-app` to start the app.
-- Edit the code in **packages/expo-custom/src** and watch it live-reload in the app!
+
+- Treminal 2
+
+- Run `cd project-name`
+- Run `npm i -g expo-cli`
+- Run `cd apps/mobile` 
+- Run `expo start`  to start project expo .
+
+- Treminal 3
+
+- Run `cd project-name`
+- Run `yarn run start-storybook`  to start project storybook .
+
+- Edit the code in **packages/storybook/components** and watch it live-reload in the app!
+
 
 ### 📁 File Structure
 
@@ -31,12 +48,12 @@ This example installs a monorepo with an application using a separate custom pac
 ├── apps
 │   └── mobile
 │       ├── index.js ➡️ Entry point for the app
-│       ├── App.js ➡️ App root component
+│       ├── App.tsx ➡️ App root component
 │       ├── package.json ➡️ contains configuration required by expo-yarn-workspaces
 │       └── metro.config.js ➡️ required by expo-yarn-workspaces
 ├── packages
-│   └── expo-custom
-│       └── src/index.tsx ➡️ exports a custom message which is imported and displayed in the app
+│   └── storybook
+│       └── components/index.tsx ➡️ exports a custom message which is imported and displayed in the app
 │       └── src/tsconfig.json ➡️ default TypeScript configuration for expo-module-scripts
 ├── package.json ➡️ contains yarn commands to run applications
 └── babel.config.js ➡️ Babel config (should be using `babel-preset-expo`)
@@ -47,31 +64,3 @@ This example installs a monorepo with an application using a separate custom pac
 This example uses the configuration described in the [Expo Monorepos Guide](https://docs.expo.dev/guides/monorepos/)
 
 
-npx create-react-native-app --template https://github.com/iit-cross-platform/template-yarn-workspace-expo
-
-
-
-terminal 1: 
-
-cd project-name
-
-yarn install --check-files
-
-yarn run build-packages
-
-yarn run watch-packages
-
-
-terminal 2:
-
-cd project-name
-
-npm i -g expo-cli
-
-cd apps/mobile && expo start --tunnel
-
-terminal 3:
-
-cd project-name
-
- yarn run start-storybook
