@@ -21,11 +21,15 @@ This example installs a monorepo with an application using a separate custom pac
 ## 🚀 How to use
 
 - Create a new monorepo with `npx create-react-native-app --template https://github.com/iit-cross-platform/template-yarn-workspace-expo`.
+
+
 - Treminal 1
 - Run `cd project-name`
 - Run `yarn install --check-files`
 - Run `yarn run build-packages` to build the packages.
 - Run `yarn watch-packages` to build and watch the packages.
+
+
 
 - Treminal 2
 
@@ -33,6 +37,8 @@ This example installs a monorepo with an application using a separate custom pac
 - Run `npm i -g expo-cli`
 - Run `cd apps/mobile` 
 - Run `expo start`  to start project expo .
+
+
 
 - Treminal 3
 
