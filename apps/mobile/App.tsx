@@ -12,7 +12,7 @@ const App = () => {
         bgColor="black"
         isDisabled
         onPress={() => { }}
-        text="this is nejah neji"
+        text="Hello Test"
         textColor="white"
       />
       <Text>
