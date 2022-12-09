@@ -27,7 +27,7 @@ This example installs a monorepo with an application using a separate custom pac
 - Run `cd project-name`
 - Run `yarn install --check-files`
 - Run `yarn run build-packages` to build the packages.
-- Run `yarn watch-packages` to build and watch the packages.
+- Run `yarn run watch-packages` to build and watch the packages.
 
 
 
