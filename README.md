@@ -23,7 +23,7 @@ This example installs a monorepo with an application using a separate custom pac
 - Create a new monorepo with `npx create-react-native-app --template https://github.com/iit-cross-platform/template-yarn-workspace-expo`.
 
 
-- Treminal 1
+- Terminal 1
 - Run `cd project-name`
 - Run `yarn install --check-files`
 - Run `yarn run build-packages` to build the packages.
@@ -31,7 +31,7 @@ This example installs a monorepo with an application using a separate custom pac
 
 
 
-- Treminal 2
+- Terminal 2
 
 - Run `cd project-name`
 - Run `npm i -g expo-cli`
@@ -40,7 +40,7 @@ This example installs a monorepo with an application using a separate custom pac
 
 
 
-- Treminal 3
+- Terminal 3
 
 - Run `cd project-name`
 - Run `yarn run start-storybook`  to start project storybook .
