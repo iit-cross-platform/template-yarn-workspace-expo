@@ -34,7 +34,7 @@ This example installs a monorepo with an application using a separate custom pac
 - Terminal 2
 
 - Run `cd project-name`
-- Run `npm i -g expo-cli`
+- Run `npm i -g expo-cli@6.1.0`
 - Run `cd apps/mobile` 
 - Run `expo start`  to start project expo .
 
